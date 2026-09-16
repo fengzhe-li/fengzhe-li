@@ -4,7 +4,9 @@ Software Engineer focused on **backend, systems, cloud, and applied machine lear
 
 I build engineering systems that connect research, infrastructure, and production-style software — from cross-machine process migration and probabilistic motorsport decision support to FinTech data platforms, full-stack applications, ML services, and event-driven cloud systems.
 
-Currently based in the UK (MSc, University College London), and interested in software engineering roles across backend, platform, cloud, applied ML, and motorsport technology.
+**MSc Telecommunications graduate from University College London (UCL), building systems across backend engineering, distributed systems, cloud infrastructure, and applied machine learning.**
+
+Based in the UK and interested in software engineering roles across backend, platform, cloud, applied ML, and motorsport technology.
 
 ## Selected Projects
 
@@ -16,11 +18,11 @@ The system estimates `p(Δv | H = h)` — conditional physical-performance chang
 
 ### 🔀 [Cross-Machine Session Migration](https://github.com/fengzhe-li/cross-machine-session-migration)
 
-A systems research project exploring how running computation and active TCP sessions can move across machines while preserving state and client-visible continuity — Docker + CRIU checkpoint/restore, native CRIU, Telefork, established-TCP restoration, and floating-VIP handover, validated through repeated experimental runs. My strongest systems/networking project.
+A systems research project exploring how running computation and active TCP sessions can move across machines while preserving state and client-visible continuity — Docker + CRIU checkpoint/restore, native CRIU, Telefork, established-TCP restoration, and floating-VIP handover, validated through repeated experimental runs.
 
 ### 💹 [Financial Knowledge Intelligence Platform](https://github.com/fengzhe-li/financial-knowledge-intelligence-platform)
 
-A production-style FinTech backend and data platform for ingesting, validating, indexing, searching, and analysing financial documents — FastAPI, PostgreSQL, Qdrant, and Airflow-compatible orchestration, containerised with Docker and Alembic-managed migrations, with explicit data quality and lineage tracking and deterministic cited retrieval plus optional RAG summarisation. My strongest backend / FinTech / data-platform project.
+A production-style FinTech backend and data platform for ingesting, validating, indexing, searching, and analysing financial documents — FastAPI, PostgreSQL, Qdrant, and Airflow-compatible orchestration, containerised with Docker and Alembic-managed migrations, with explicit data quality and lineage tracking and deterministic cited retrieval plus optional RAG summarisation.
 
 ## Other Projects
 
@@ -47,11 +49,11 @@ An earlier collaborative team project using AWS IoT Core, Lambda, API Gateway, P
 
 ## Technical Focus
 
-**Languages:** Python · TypeScript · SQL · C / Embedded C
-**Backend & Data:** FastAPI · PostgreSQL · SQLAlchemy · Alembic · Qdrant · REST APIs
-**Systems & Cloud:** Linux · Docker · AWS · CRIU · GitHub Actions
-**ML / AI:** Probabilistic modelling · uncertainty quantification · TensorFlow · RAG · model serving
-**Frontend:** React · TypeScript · Vite
+- **Languages:** Python · TypeScript · SQL · C / Embedded C
+- **Backend & Data:** FastAPI · PostgreSQL · SQLAlchemy · Alembic · Qdrant · REST APIs
+- **Systems & Cloud:** Linux · Docker · AWS · CRIU · GitHub Actions
+- **ML / AI:** Probabilistic modelling · uncertainty quantification · TensorFlow · RAG · model serving
+- **Frontend:** React · TypeScript · Vite
 
 ## Interests
 
