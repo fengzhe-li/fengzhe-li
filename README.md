@@ -1,56 +1,81 @@
 # Fengzhe Li
 
-Software Engineer focused on **backend, systems, cloud, and applied machine learning**.
+**Software Engineer · Applied AI · Backend & Systems**
 
-I build backend and systems software where state, correctness, provenance, and failure boundaries matter — from process migration and event-driven cloud systems to FinTech platforms and applied ML. MSc Telecommunications, University College London (UCL).
+I build Python services, evidence-grounded AI workflows and systems tools, with an emphasis on testing, data provenance and reproducible evaluation. My work spans LLM research agents, retrieval-augmented applications, vision-language model integration, audio classification and Linux process migration.
 
-Based in the UK · [Email](mailto:fengzheli048@gmail.com)
+Based in the UK · MSc Telecommunications, UCL · [Email](mailto:fengzheli048@gmail.com)\
+Seeking **Graduate / Junior Software Engineering** roles across Python backend, applied AI, full-stack/cloud, and automotive or motorsport software.
+
+**Start here:** [Interactive automotive demo](https://fengzhe-li.github.io/vehicle-aware-human-fallback/) · [Backend & RAG platform](https://github.com/fengzhe-li/financial-knowledge-intelligence-platform) · [Systems experiments](https://github.com/fengzhe-li/cross-machine-session-migration)
 
 ## Featured Projects
 
-### [Cross-Machine Session Migration](https://github.com/fengzhe-li/cross-machine-session-migration)
-Systems research on moving running computation and active TCP sessions across machines while preserving state and client-visible continuity. Covers Docker/CRIU checkpoint-restore (8/10 final trials), native CRIU (5/5), Telefork (5/5), and established-TCP restoration with floating-VIP handover (5/5).
+### 1. [Vehicle-Aware Human Fallback](https://github.com/fengzhe-li/vehicle-aware-human-fallback)
 
-### [Auditable Financial Research Agent](https://github.com/fengzhe-li/auditable-financial-research-agent)
-An assurance layer for AI-assisted financial research enforcing controlled retrieval, an explicit state machine, deterministic independent claim validation, versioned governance policy, and a mandatory human review publication gate. Built with FastAPI, React/TypeScript, and Docker, with 437 backend tests and 27 frontend tests; unsupported-claim rate fell from 52% to 0% across the frozen 50-task deterministic benchmark.
+Integrates pretrained **AutoVLA / Qwen2.5-VL** with independent trajectory checks and a braking-only human-fallback model. A separate **YOLO11n** extension adds reproducible 2D perception experiments and read-only comparison with saved VLA results. Includes an interactive browser demonstrator, provenance checks and offline verification in CI.
 
-### [Indy 500 Point-in-Time Decision Support](https://github.com/fengzhe-li/indy500-point-in-time-decision-support)
-A point-in-time decision-support system for Indy 500 qualifying built around a frozen physics-conditioned probabilistic core with forecast-vintage provenance, fail-closed leakage control, uncertainty-aware inference, and evidence-aware abstention behind FastAPI and React/TypeScript. Evaluated across 15 external hybrid-era cases (MAE 0.492 mph); deliberately does not estimate queue waiting time or issue retain/withdraw decisions.
+**Python · PyTorch · Transformers · Computer Vision**\
+Recorded open-loop predictions and model-based necessary conditions—not validated autonomous-driving safety. [Demo](https://fengzhe-li.github.io/vehicle-aware-human-fallback/) · [YOLO extension](https://github.com/fengzhe-li/vehicle-aware-human-fallback/tree/main/extensions/yolo_perception)
 
-### [Financial Knowledge Intelligence Platform](https://github.com/fengzhe-li/financial-knowledge-intelligence-platform)
-A production-style FinTech data platform for financial document ingestion, validation, duplicate detection, and run lineage. Built with FastAPI, PostgreSQL (with Alembic migrations), Qdrant vector retrieval, and Docker with Airflow-compatible orchestration. Implements deterministic cited retrieval by default, keeping optional LLM summarisation strictly inside the RAG layer.
+### 2. [Auditable Financial Research Agent](https://github.com/fengzhe-li/auditable-financial-research-agent)
 
-### [Edge-to-Cloud IoT Event Platform](https://github.com/fengzhe-li/edge-to-cloud-iot-event-platform)
-An event-driven AWS IoT backend (IoT Core, Lambda, API Gateway, DynamoDB, PostgreSQL) featuring retry-safe transactional event deduplication, timestamp-guarded state updates, and compare-and-swap alert handling. Verified with 102 local tests, including 15 real PostgreSQL and 4 DynamoDB-emulator integration tests; GitHub Actions runs the test suite with PostgreSQL and configuration checks.
+An LLM-assisted research workflow with controlled retrieval, explicit state transitions, independent deterministic citation validation, versioned governance and human approval gates. The React assurance console exposes evidence, claim revisions and review decisions; backend/frontend tests and Docker builds run in CI.
 
-### [Vehicle-Aware Human Fallback](https://github.com/fengzhe-li/vehicle-aware-human-fallback)
-Braking-only recoverability and evidence-boundary analysis for Level 3 automated-driving takeovers. Audits the TU Delft D003 simulator dataset (513 trials, 57 drivers), showing that independent human driver braking cannot be identified from telemetry. Applies an interval-bounded braking model classifying 150 scenario cases into 58 robustly satisfied, 47 parameter-sensitive, and 45 robustly unsatisfied — within-model necessary-condition classifications, not safety labels.
+**Python · FastAPI · React / TypeScript · Docker**\
+Evaluation uses frozen synthetic tasks; citation checks do not establish general semantic truth or production compliance. [Validation methodology](https://github.com/fengzhe-li/auditable-financial-research-agent/blob/main/docs/PHASE_6_5_REAL_MODEL_REPORT.md)
+
+### 3. [Financial Knowledge Intelligence Platform](https://github.com/fengzhe-li/financial-knowledge-intelligence-platform)
+
+A financial-document ingestion and **RAG** platform with validation, duplicate detection, PostgreSQL metadata and run lineage, Qdrant retrieval, and a React research workspace. Answers expose source passages and citations. Extractive answers are the default; optional LLM summarisation stays behind the retrieval interface.
+
+**Python · FastAPI · PostgreSQL · Qdrant · React / TypeScript · Docker**\
+Includes API, pipeline and browser tests. Raw documents use local object storage; the packaged MinIO service is not an implemented storage adapter.
+
+### 4. [Cross-Machine Session Migration](https://github.com/fengzhe-li/cross-machine-session-migration)
+
+Experimental migration of running processes and established TCP sessions using **Docker/CRIU**, native CRIU and floating-VIP handover. Shell orchestration, Python clients and recorded source/target evidence distinguish preserved process state from client-visible session continuity. Includes reproduction and validation of the upstream Telefork approach.
+
+**Linux · Python · Bash · Docker · CRIU · TCP/IP**\
+Results are bounded to the tested compatible environments; container checkpoint failures remain documented. [Experiment evidence](https://github.com/fengzhe-li/cross-machine-session-migration/blob/main/docs/EXPERIMENT_EVIDENCE.md)
+
+### 5. [Indy 500 Racing Point-in-Time Decision Support](https://github.com/fengzhe-li/indy500-racing-point-in-time-decision-support)
+
+A **FastAPI + React/TypeScript** application for point-in-time qualifying analysis, combining physical modelling, forecast-vintage provenance, historical replay and evidence-aware abstention. Keeps hypothetical scenarios separate from historical evidence, with documented external validation and reproducibility boundaries.
+
+**Python · Probabilistic Modelling · FastAPI · React / TypeScript**\
+Does not infer unsupported queue waiting times or issue retain/withdraw recommendations. [Application](https://github.com/fengzhe-li/indy500-racing-point-in-time-decision-support/tree/main/v3_point_in_time) · [Validation](https://github.com/fengzhe-li/indy500-racing-point-in-time-decision-support/blob/main/docs/validation.md) · [Earlier project URL](https://github.com/fengzhe-li/indy500-point-in-time-decision-support)
+
+### 6. [Respiratory Audio AI Engineering Platform](https://github.com/fengzhe-li/respiratory-audio-ai-engineering-platform)
+
+Refactors an MSc audio-classification project into a reusable **Mel-spectrogram CNN** pipeline with FastAPI inference, Docker packaging and model-contract tests. Patient-independent grouped evaluation keeps patients and augmented cycles separate, exposing the limitations of the original sample-level split. Optional LLM reporting is separate from prediction.
+
+**Python · TensorFlow / Keras · librosa · FastAPI · Docker**\
+Grouped-holdout performance is modest and variable; this is an engineering/research prototype, not a clinical diagnostic tool.
 
 ## Additional Engineering Projects
 
-**[STM32 Fall Detection System](https://github.com/fengzhe-li/stm32-fall-detection-system)**  
-Embedded fall-detection prototype with MPU6050 sensor processing, GPS localization, and GSM/SMS alerting, originally demonstrated on physical STM32 hardware. The recovered and hardened C firmware has since been verified host-side using compiler and sanitizer checks.
-
-**[Respiratory Audio AI Engineering Platform](https://github.com/fengzhe-li/respiratory-audio-ai-engineering-platform)**  
-An engineered ML system refactored from an MSc research project: patient-independent, leakage-safe grouped evaluation, Mel-spectrogram CNN inference served via FastAPI, Docker packaging, and model-contract tests. Reports modest grouped-holdout performance honestly; not a clinical diagnostic tool.
-
-**[Full-Stack Recommendation Platform — MeetEat](https://github.com/fengzhe-li/fullstack-recommendation-platform)**  
-Full-stack group restaurant recommendation platform (React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy/Alembic, Docker) where deterministic ranking controls recommendation order and voting workflows; optional AI explanations do not control ranking. Verified with Playwright accessibility tests and CI.
-
-**[Job Intelligence Platform](https://github.com/fengzhe-li/job-intelligence-platform)**  
-A multi-source job-search backend/data pipeline built on the Python standard library, featuring seven source connectors behind a shared interface, normalization, layered cross-source deduplication, evidence-backed capability matching, saved searches, and workflow tracking. PostgreSQL is defined as a schema contract.
-
-<details>
-<summary><strong>Earlier / lineage projects</strong></summary>
-
-- **[Telecom Research Intelligence](https://github.com/fengzhe-li/telecom-research-intelligence)** — Automated batch document ingestion and keyword extraction pipeline for arXiv research papers; provided the initial architectural pattern later expanded into the Financial Knowledge Intelligence Platform.
-- **[AWS IoT Smart Spill Detection System](https://github.com/fengzhe-li/aws-iot-smart-spill-detection-system)** — Original collaborative team IoT prototype using AWS IoT Core, Lambda, and DynamoDB; served as the starting baseline for the independently upgraded Edge-to-Cloud IoT Event Platform.
-
-</details>
+- **[NFL QB Pressure Replay](https://github.com/fengzhe-li/nfl-qb-pressure-replay)** — Interactive tracking-data replay, kinematic analysis and public **Qwen2.5-VL** evaluation against independent tracking ground truth. The published implementation analyses rendered replay frames; it does not claim a video detector/tracker extension.
+- **[Job Intelligence Platform](https://github.com/fengzhe-li/job-intelligence-platform)** — Multi-source ingestion, deduplication, explainable matching and evidence-backed CV generation. The [published feature-branch release](https://github.com/fengzhe-li/job-intelligence-platform/tree/592abeb21750ea100d10966d126d698ec5dfa919) adds JD lexical alignment, repository evidence mapping and supervised browser handoff; it is not yet merged into `main`. Private candidate data stays local and final submission remains human-controlled.
+- **[Edge-to-Cloud IoT Event Platform](https://github.com/fengzhe-li/edge-to-cloud-iot-event-platform)** — AWS IoT/Lambda event processing with transactional deduplication, timestamp-guarded state updates, PostgreSQL and DynamoDB. Includes integration tests and CI; evolved from the original team IoT prototype.
+- **[MeetEat — Full-Stack Recommendation Platform](https://github.com/fengzhe-li/fullstack-recommendation-platform)** — React/TypeScript, FastAPI and PostgreSQL group recommendations and voting. Deterministic ranking controls results; optional AI explains them. Includes browser tests and CI.
+- **[STM32 Fall Detection System](https://github.com/fengzhe-li/stm32-fall-detection-system)** — Embedded C sensor processing, GPS and GSM/SMS alerts. Historical physical-prototype evidence is distinguished from host-side checks of the current firmware.
 
 ## Technical Focus
 
-- **Languages:** Python · TypeScript · SQL · C / Embedded C
-- **Backend & Distributed Systems:** FastAPI · PostgreSQL · SQLAlchemy · Alembic · Qdrant · REST APIs · State Machines · Event-Driven Architecture
-- **Systems & Cloud:** Linux · Docker · AWS (IoT Core, Lambda, API Gateway, DynamoDB, SES) · CRIU · GitHub Actions CI
-- **Applied ML & Data:** Probabilistic modelling · Uncertainty quantification · Information retrieval / RAG · Evaluation benchmarking · TensorFlow
+- **Backend:** Python, FastAPI, PostgreSQL, SQLAlchemy/Alembic, REST APIs and state machines.
+- **Applied AI:** LLM agents, evidence-grounded workflows, RAG/Qdrant, PyTorch, Qwen2.5-VL/AutoVLA integration, YOLO11n, TensorFlow/Keras CNNs and evaluation design.
+- **Full-stack & cloud:** React, TypeScript, Docker, AWS IoT Core, Lambda, API Gateway and DynamoDB.
+- **Systems & quality:** Linux, CRIU, TCP/IP, automated tests, GitHub Actions CI, provenance auditing and reproducible experiments.
+
+<details>
+<summary><strong>Earlier projects and engineering lineage</strong></summary>
+
+- [Telecom Research Intelligence](https://github.com/fengzhe-li/telecom-research-intelligence) — arXiv document ingestion and keyword/report generation; an earlier foundation for the financial knowledge platform.
+- [AWS IoT Smart Spill Detection](https://github.com/fengzhe-li/aws-iot-smart-spill-detection-system) — Original collaborative IoT prototype, retained separately from the upgraded event platform.
+- [IoT Sensor Data Analysis](https://github.com/fengzhe-li/iot-sensor-data-analysis) — Python time-series exploration and threshold-based anomaly analysis.
+- [Cycling Business Analysis](https://github.com/fengzhe-li/cycling-business-analysis-sql-tableau) — PostgreSQL analysis and Tableau dashboards.
+- [Customer Revenue Analytics](https://github.com/fengzhe-li/End-to-End-SQL-Data-Analysis-Movie-Renting-Dataset) — SQL Server rental-data analysis and Power BI reporting.
+- [Retail Sales Analytics](https://github.com/fengzhe-li/retail-sales-analytics-dashboard) — SQL KPI analysis and dashboard reporting.
+
+</details>
