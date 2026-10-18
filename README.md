@@ -11,12 +11,12 @@ Seeking **Graduate / Junior Software Engineering** roles across Python backend, 
 
 ## Featured Projects
 
-### 1. [Vehicle-Aware Human Fallback](https://github.com/fengzhe-li/vehicle-aware-human-fallback)
+### 1. [Cross-Machine Session Migration](https://github.com/fengzhe-li/cross-machine-session-migration)
 
-Integrates pretrained **AutoVLA / Qwen2.5-VL** with independent trajectory checks and a braking-only human-fallback model. A separate **YOLO11n** extension adds reproducible 2D perception experiments and read-only comparison with saved VLA results. Includes an interactive browser demonstrator, provenance checks and offline verification in CI.
+Experimental migration of running processes and established TCP sessions using **Docker/CRIU**, native CRIU and floating-VIP handover. Shell orchestration, Python clients and recorded source/target evidence distinguish preserved process state from client-visible session continuity. Includes reproduction and validation of the upstream Telefork approach.
 
-**Python · PyTorch · Transformers · Computer Vision**\
-Recorded open-loop predictions and model-based necessary conditions—not validated autonomous-driving safety. [Demo](https://fengzhe-li.github.io/vehicle-aware-human-fallback/) · [YOLO extension](https://github.com/fengzhe-li/vehicle-aware-human-fallback/tree/main/extensions/yolo_perception)
+**Linux · Python · Bash · Docker · CRIU · TCP/IP**\
+Results are bounded to the tested compatible environments; container checkpoint failures remain documented. [Experiment evidence](https://github.com/fengzhe-li/cross-machine-session-migration/blob/main/docs/EXPERIMENT_EVIDENCE.md)
 
 ### 2. [Auditable Financial Research Agent](https://github.com/fengzhe-li/auditable-financial-research-agent)
 
@@ -32,12 +32,12 @@ A financial-document ingestion and **RAG** platform with validation, duplicate d
 **Python · FastAPI · PostgreSQL · Qdrant · React / TypeScript · Docker**\
 Includes API, pipeline and browser tests. Raw documents use local object storage; the packaged MinIO service is not an implemented storage adapter.
 
-### 4. [Cross-Machine Session Migration](https://github.com/fengzhe-li/cross-machine-session-migration)
+### 4. [Vehicle-Aware Human Fallback](https://github.com/fengzhe-li/vehicle-aware-human-fallback)
 
-Experimental migration of running processes and established TCP sessions using **Docker/CRIU**, native CRIU and floating-VIP handover. Shell orchestration, Python clients and recorded source/target evidence distinguish preserved process state from client-visible session continuity. Includes reproduction and validation of the upstream Telefork approach.
+Integrates pretrained **AutoVLA / Qwen2.5-VL** with independent trajectory checks and a braking-only human-fallback model. A separate **YOLO11n** extension adds reproducible 2D perception experiments and read-only comparison with saved VLA results. Includes an interactive browser demonstrator, provenance checks and offline verification in CI.
 
-**Linux · Python · Bash · Docker · CRIU · TCP/IP**\
-Results are bounded to the tested compatible environments; container checkpoint failures remain documented. [Experiment evidence](https://github.com/fengzhe-li/cross-machine-session-migration/blob/main/docs/EXPERIMENT_EVIDENCE.md)
+**Python · PyTorch · Transformers · Computer Vision**\
+Recorded open-loop predictions and model-based necessary conditions—not validated autonomous-driving safety. [Demo](https://fengzhe-li.github.io/vehicle-aware-human-fallback/) · [YOLO extension](https://github.com/fengzhe-li/vehicle-aware-human-fallback/tree/main/extensions/yolo_perception)
 
 ### 5. [Indy 500 Racing Point-in-Time Decision Support](https://github.com/fengzhe-li/indy500-racing-point-in-time-decision-support)
 
