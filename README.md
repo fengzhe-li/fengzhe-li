@@ -53,11 +53,17 @@ Refactors an MSc audio-classification project into a reusable **Mel-spectrogram 
 **Python · TensorFlow / Keras · librosa · FastAPI · Docker**\
 Grouped-holdout performance is modest and variable; this is an engineering/research prototype, not a clinical diagnostic tool.
 
+### 7. [Edge-to-Cloud IoT Event Platform](https://github.com/fengzhe-li/edge-to-cloud-iot-event-platform)
+
+An event-driven backend around **AWS IoT Core**, **Lambda** and **API Gateway** with transactional retry deduplication, timestamp-guarded state updates, compare-and-swap alerting and read-only operational analytics across PostgreSQL and DynamoDB. Verified with 102 local tests (including real PostgreSQL and DynamoDB-emulator integration tests) and GitHub Actions CI.
+
+**Python · AWS IoT Core · Lambda · API Gateway · PostgreSQL · DynamoDB**\
+Evolved from the original collaborative IoT prototype; remote IoT actuation publish is disabled by default and fire-and-forget. [Engineering design](https://github.com/fengzhe-li/edge-to-cloud-iot-event-platform/blob/main/docs/ENGINEERING.md)
+
 ## Additional Engineering Projects
 
 - **[NFL QB Pressure Replay](https://github.com/fengzhe-li/nfl-qb-pressure-replay)** — Interactive tracking-data replay, kinematic analysis and public **Qwen2.5-VL** evaluation against independent tracking ground truth. The published implementation analyses rendered replay frames; it does not claim a video detector/tracker extension.
 - **[Job Intelligence Platform](https://github.com/fengzhe-li/job-intelligence-platform)** — Multi-source ingestion, deduplication, explainable matching and evidence-backed CV generation. The [published feature-branch release](https://github.com/fengzhe-li/job-intelligence-platform/tree/592abeb21750ea100d10966d126d698ec5dfa919) adds JD lexical alignment, repository evidence mapping and supervised browser handoff; it is not yet merged into `main`. Private candidate data stays local and final submission remains human-controlled.
-- **[Edge-to-Cloud IoT Event Platform](https://github.com/fengzhe-li/edge-to-cloud-iot-event-platform)** — AWS IoT/Lambda event processing with transactional deduplication, timestamp-guarded state updates, PostgreSQL and DynamoDB. Includes integration tests and CI; evolved from the original team IoT prototype.
 - **[MeetEat — Full-Stack Recommendation Platform](https://github.com/fengzhe-li/fullstack-recommendation-platform)** — React/TypeScript, FastAPI and PostgreSQL group recommendations and voting. Deterministic ranking controls results; optional AI explains them. Includes browser tests and CI.
 - **[STM32 Fall Detection System](https://github.com/fengzhe-li/stm32-fall-detection-system)** — Embedded C sensor processing, GPS and GSM/SMS alerts. Historical physical-prototype evidence is distinguished from host-side checks of the current firmware.
 
